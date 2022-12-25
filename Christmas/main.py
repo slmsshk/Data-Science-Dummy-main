@@ -21,7 +21,7 @@ st.set_page_config('Christmas AI',page_icon='🎅')
 col1,col2=st.columns(2)
 
 if col1.button('make it snow'):
-    note=open('Jingle-Bells-3.mp3','rb')
+    note=open('/Jingle-Bells-3.mp3','rb')
     st.audio(note,format='audio/mp3',start_time=20)
     import time
     for i in range(20):
