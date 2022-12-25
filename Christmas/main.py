@@ -13,7 +13,7 @@ from PIL import Image
 
 # Set Page configuration
 st.set_page_config('Christmas AI',page_icon='🎅')
-UI.add_bg_from_local(r"Images\santa.png")
+# UI.add_bg_from_local(r"Images\santa.png")
 
 
 
