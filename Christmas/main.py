@@ -48,7 +48,7 @@ if picture:
     #Store Array in Image
     img = Image.open(picture)
     img_array = np.array(img)
-    plt.imsave('Images/image.jpg',img_array)
+    plt.imsave('image.jpg',img_array)
 
     import Age_detection as ad
 
