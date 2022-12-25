@@ -13,7 +13,7 @@ from PIL import Image
 
 # Set Page configuration
 st.set_page_config('Christmas AI',page_icon='🎅')
-UI.add_bg_from_local('santa.png')
+UI.add_bg_from_local('Images\image.jpg')
 
 
 
@@ -48,7 +48,7 @@ if picture:
     #Store Array in Image
     img = Image.open(picture)
     img_array = np.array(img)
-    plt.imsave('image.jpg',img_array)
+    plt.imsave('Images/image.jpg',img_array)
 
     import Age_detection as ad
 
