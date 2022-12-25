@@ -1,0 +1,7 @@
+streamlit
+opencv-python
+matplotlib
+pandas
+numpy
+tensorflow
+protobuf == 4.21.12
