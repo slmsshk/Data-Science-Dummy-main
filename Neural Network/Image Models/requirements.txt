@@ -1,9 +1,0 @@
-streamlit
-tensorflow_hub
-opencv-python-headless
-matplotlib
-pandas
-numpy
-tensorflow
-protobuf == 3.20.1
-IPython
