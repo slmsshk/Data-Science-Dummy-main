@@ -6,7 +6,7 @@ import cv2
 import tensorflow as tf
 import numpy as np
 
-
+import time
 # ++++++++++++++++++++++++++++++++++++++
 # Page setup
 # ==========================================
@@ -48,14 +48,26 @@ with col2:
         # Open St format to Image format
         sty = Image.open(style_file)
         col2.image(sty) #Display the image
-        cv2.imwrite(img=cv2.cvtColor(np.array(img),cv2.COLOR_RGB2BGR),filename='st.jpg') #Save the file
+        cv2.imwrite(img=cv2.cvtColor(np.array(sty),cv2.COLOR_RGB2BGR),filename='st.jpg') #Save the file
 
 UI.write('Neural Style transfer image')
 
 but=st.button('press me for Style transfer')
 
 if but:
-    import time
     import sty
     time.sleep(10)
     st.image('final.jpg')
+    
+try:
+    with open("final.jpg", "rb") as file:
+        btn = st.download_button(
+                label="Download image",
+                data=file,
+                file_name="style.png",
+                mime="image/png"
+            )
+except:
+    st.write(':)')
+
+UI.write('RESTART THE PAGE FOR NEW IMAGE')
