@@ -18,21 +18,27 @@ def model_training(future,X_train,y_train,sp):
     nn.add(LSTM(50,activation='relu',input_shape=(sp,1),name='input_layer_lstm'))
     nn.add(Dense(50,name='Hidden_layer_Dense1',activation='LeakyReLU'))
     nn.add(Dense(50,name='Hidden_layer_Dense2'))
+    nn.add(Dense(50,name='Hidden_layer_Dense3'))
+
     nn.add(Dense(future,name='Output_layer_Dense'))
     nn.compile(loss='mse',optimizer='adam')
     nn.summary(print_fn=lambda x: st.text(x))
     # st.write(f'<p>{nn.summary()}</p>',unsafe_allow_html=True)
 
     nn.fit(X_train,y_train,epochs=100,batch_size=100)
-    nn.save("Trained")
+    nn.save("model.h5")
+    st.write("Saved model to disk")
+    # nn.save("Trained")
+    st.write(nn.history.history['loss'][-1])
 
 # ========================================================
 # st.write()
 def Evaluation(X_test,y_test):
     col3,col4,col5=st.columns(3)
     col4.header('Model Evaluation')
-    nn=keras.models.load_model('Trained')
+    nn=keras.models.load_model('model.h5')
     pred=nn.predict(X_test)
+    # nn.history.history['loss'][-1]
     fig,ax=plt.subplots()
     ax.plot(pred[:,-1],label='prediction',color='orange')
     ax.plot(y_test[:,-1],label='Actual',color='red')
@@ -52,6 +58,7 @@ def pred(interval,period,sp,pair):
     fig,ax=plt.subplots()
     ax.plot(np.append(pp,values=predict))
     ax.set_xticks([i+1 for i in range(sp)])
+    st.write('loss',nn.history.history)
     st.write(predict)
     st.pyplot(fig)
 
