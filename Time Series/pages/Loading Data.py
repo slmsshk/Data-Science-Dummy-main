@@ -55,7 +55,7 @@ else:
 eur=yf.Ticker(pair)
 hist = eur.history(interval=interval,period=period)
 eur.history()
-
+hist.to_csv('data.csv')
 # Display code on the UI
 st.code(f"""
 import yfinance as yf
@@ -140,7 +140,7 @@ col1,col2=st.columns(2)
 
 
 # Preparing Data
-X_arr,Y_arr=np.array(X),np.array(Y)
+X_arr,Y_arr=np.log(np.array(X)),np.log(np.array(Y))
 # st.write(X_arr.shape)
 X_arr=X_arr.reshape(X_arr.shape[:][0],sp,1)
 # st.write(X_arr.shape)

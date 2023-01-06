@@ -49,7 +49,7 @@ def Evaluation(X_test,y_test):
 def pred(interval,period,sp,pair):
     import yfinance as yf
     import numpy as np
-    nn=keras.models.load_model('Trained')
+    nn=keras.models.load_model('model.h5')
     x=yf.Ticker(pair)
     pp=x.history(interval=interval,period=period).Close[-sp:].values.reshape(1,sp,1)
     # y=x.history(interval=interval,period=period).Close[-sp:].values
