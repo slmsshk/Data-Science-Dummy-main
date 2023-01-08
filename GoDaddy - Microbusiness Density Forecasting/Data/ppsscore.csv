@@ -1,0 +1,50 @@
+x,y,ppscore,case,is_valid_score,metric,baseline_score,model_score,model
+row_id,row_id,1.0,predict_itself,True,,0.0,1.0,
+row_id,cfips,0.0,feature_is_id,True,,0.0,0.0,
+row_id,county,0.0,feature_is_id,True,,0.0,0.0,
+row_id,state,0.0,feature_is_id,True,,0.0,0.0,
+row_id,first_day_of_month,0.0,feature_is_id,True,,0.0,0.0,
+row_id,microbusiness_density,0.0,feature_is_id,True,,0.0,0.0,
+row_id,active,0.0,feature_is_id,True,,0.0,0.0,
+cfips,row_id,0.0,target_is_id,True,,0.0,0.0,
+cfips,cfips,1.0,predict_itself,True,,0.0,1.0,
+cfips,county,0.7865596381634321,classification,True,weighted F1,0.0012,0.786815766597636,DecisionTreeClassifier()
+cfips,state,0.7787566762208895,classification,True,weighted F1,0.03,0.7853939759342629,DecisionTreeClassifier()
+cfips,first_day_of_month,0.0,target_is_datetime,False,,0.0,0.0,
+cfips,microbusiness_density,0.56429016403749,regression,True,mean absolute error,2.1268092768592,0.9266717211438668,DecisionTreeRegressor()
+cfips,active,0.6260712046195903,regression,True,mean absolute error,6209.2432,2321.8148300000003,DecisionTreeRegressor()
+county,row_id,0.0,target_is_id,True,,0.0,0.0,
+county,cfips,0.489408325256793,classification,True,weighted F1,3.914519672458558e-06,0.4894103239779484,DecisionTreeClassifier()
+county,county,1.0,predict_itself,True,,0.0,1.0,
+county,state,0.4601980666838354,classification,True,weighted F1,0.03,0.4763921246833204,DecisionTreeClassifier()
+county,first_day_of_month,0.0,target_is_datetime,False,,0.0,0.0,
+county,microbusiness_density,0.29858168538063956,regression,True,mean absolute error,2.1268092768592,1.491782978491401,DecisionTreeRegressor()
+county,active,0.21906917096755085,regression,True,mean absolute error,6209.2432,4848.9894398400975,DecisionTreeRegressor()
+state,row_id,0.0,target_is_id,True,,0.0,0.0,
+state,cfips,0.004956580114549008,classification,True,weighted F1,3.914519672458558e-06,0.0049604752315911,DecisionTreeClassifier()
+state,county,0.0047086151168134055,classification,True,weighted F1,0.0012,0.005902964778673229,DecisionTreeClassifier()
+state,state,1.0,predict_itself,True,,0.0,1.0,
+state,first_day_of_month,0.0,target_is_datetime,False,,0.0,0.0,
+state,microbusiness_density,0.03282857366891123,regression,True,mean absolute error,2.1268092768592,2.056989161834104,DecisionTreeRegressor()
+state,active,0.0,regression,True,mean absolute error,6209.2432,8575.358949757847,DecisionTreeRegressor()
+first_day_of_month,row_id,0.0,target_is_id,True,,0.0,0.0,
+first_day_of_month,cfips,0.0,classification,True,weighted F1,3.914519672458558e-06,0.0,DecisionTreeClassifier()
+first_day_of_month,county,0.0,classification,True,weighted F1,0.0012,0.0008615290217110488,DecisionTreeClassifier()
+first_day_of_month,state,0.0,classification,True,weighted F1,0.03,0.022104573456018208,DecisionTreeClassifier()
+first_day_of_month,first_day_of_month,1.0,predict_itself,True,,0.0,1.0,
+first_day_of_month,microbusiness_density,0.0,regression,True,mean absolute error,2.1268092768592,2.387095347003531,DecisionTreeRegressor()
+first_day_of_month,active,0.0,regression,True,mean absolute error,6209.2432,9594.03079942022,DecisionTreeRegressor()
+microbusiness_density,row_id,0.0,target_is_id,True,,0.0,0.0,
+microbusiness_density,cfips,0.029040008681822334,classification,True,weighted F1,3.914519672458558e-06,0.02904380952380952,DecisionTreeClassifier()
+microbusiness_density,county,0.0266275069372333,classification,True,weighted F1,0.0012,0.02779555392890862,DecisionTreeClassifier()
+microbusiness_density,state,0.031059078218950903,classification,True,weighted F1,0.03,0.060127305872382374,DecisionTreeClassifier()
+microbusiness_density,first_day_of_month,0.0,target_is_datetime,False,,0.0,0.0,
+microbusiness_density,microbusiness_density,1.0,predict_itself,True,,0.0,1.0,
+microbusiness_density,active,0.0,regression,True,mean absolute error,6209.2432,7863.7712,DecisionTreeRegressor()
+active,row_id,0.0,target_is_id,True,,0.0,0.0,
+active,cfips,0.03063562820351962,classification,True,weighted F1,3.914519672458558e-06,0.0306394227994228,DecisionTreeClassifier()
+active,county,0.027961255926020542,classification,True,weighted F1,0.0012,0.02912770241890932,DecisionTreeClassifier()
+active,state,0.04248717020034061,classification,True,weighted F1,0.03,0.07121255509433039,DecisionTreeClassifier()
+active,first_day_of_month,0.0,target_is_datetime,False,,0.0,0.0,
+active,microbusiness_density,0.15780291060002294,regression,True,mean absolute error,2.1268092768592,1.7911925826796884,DecisionTreeRegressor()
+active,active,1.0,predict_itself,True,,0.0,1.0,
