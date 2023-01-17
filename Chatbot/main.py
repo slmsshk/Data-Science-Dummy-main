@@ -4,7 +4,7 @@ st.title('ChatBot')
 
 import openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 
 prompt = (f"Write a story about an adventure")
