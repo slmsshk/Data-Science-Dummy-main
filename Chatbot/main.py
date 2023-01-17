@@ -3,7 +3,7 @@ import streamlit as st
 st.title('ChatBot')
 
 import openai
-openai.api_key = "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"
+openai.api_key = "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"
 
 prompt = (f"Write a story about an adventure")
 text_input=st.text_input('Enter a prompt')
