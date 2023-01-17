@@ -11,7 +11,7 @@ t=st.slider('slide to set temperature value', min_value=0.1, max_value=1.0)
 completions = openai.Completion.create(
     engine="text-davinci-002",
     prompt=text_input,
-    max_tokens=inf,
+    max_tokens=float('-inf'),
     n=1,
     stop=None,
     temperature=0.5,
