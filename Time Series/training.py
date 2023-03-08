@@ -1,4 +1,3 @@
-
 # ================================================================
 # Model Training
 from keras.models import Sequential
