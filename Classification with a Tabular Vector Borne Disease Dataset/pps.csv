@@ -1,0 +1,8 @@
+x,y,ppscore,case,is_valid_score,metric,baseline_score,model_score,model
+slow_heart_rate,yellow_skin,0.30091512894363104,regression,True,mean absolute error,0.4823196605374823,0.3371823776947975,DecisionTreeRegressor()
+itchiness,ulcers,0.36558613088420877,regression,True,mean absolute error,0.14427157001414428,0.09152788493608305,DecisionTreeRegressor()
+itchiness,toenail_loss,0.36773391558324875,regression,True,mean absolute error,0.1371994342291372,0.08674654906425017,DecisionTreeRegressor()
+ulcers,itchiness,0.37578419180165534,regression,True,mean absolute error,0.15417256011315417,0.09623694921304041,DecisionTreeRegressor()
+ulcers,toenail_loss,0.39453197761532255,regression,True,mean absolute error,0.1371994342291372,0.08306987011501232,DecisionTreeRegressor()
+toenail_loss,itchiness,0.3848324616659994,regression,True,mean absolute error,0.15417256011315417,0.09484195428345978,DecisionTreeRegressor()
+toenail_loss,ulcers,0.40272320275387263,regression,True,mean absolute error,0.14427157001414428,0.08617006127171853,DecisionTreeRegressor()
