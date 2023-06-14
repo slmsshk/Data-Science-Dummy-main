@@ -17,7 +17,7 @@ def header(url):
 
 header("Claimnants Dataset")
 
-data=pd.read_csv(r"C:\Users\Slmss\Desktop\excelr\Deployment\Python  Streamlit\claimants.csv")
+data=pd.read_csv(r"C:\Users\Slmss\OneDrive\Desktop\A.I\Data_Science-_Dummy-main\Deployment\st\claimants.csv")
 
 
 # Columns
