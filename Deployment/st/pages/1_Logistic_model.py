@@ -9,8 +9,11 @@ import joblib
 
 import warnings
 warnings.filterwarnings('ignore')
+
 st.set_option('deprecation.showPyplotGlobalUse', False)
+
 st.set_page_config(page_title="Model training", page_icon="📈")
+# ++++++++++++++++++++++++++++++++++++++++++++++++++
 
 def header(url):
      st.markdown(f'<p style="background-color:#f2f3f4;color:#4b5320;font-size:24px;border-radius:2%;text-align:center">{url}</p>', unsafe_allow_html=True)
@@ -201,7 +204,7 @@ def Fill_Missing_Value(df):
     return df
 
 df=Fill_Missing_Value(data)
-
+# ======================================================
 col6,col7=st.columns(2)
 
 def head2(url):
