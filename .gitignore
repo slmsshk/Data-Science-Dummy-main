@@ -1402,3 +1402,7 @@ whatsapp.gif
 deep_learning_for_vision_systems/06/dogs_vs_cats_project/data/**
 deep_learning_for_vision_systems/06/dogs_vs_cats_project/data/test/cat/cat.12284.jpg
 *.png
+deep_learning_for_vision_systems/06/dogs_vs_cats_project/data/*
+deep_learning_for_vision_systems/06/dogs_vs_cats_project/data/test/cat/cat.12255.jpg
+*.jpg
+*.jpg
