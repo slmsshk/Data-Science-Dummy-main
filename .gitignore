@@ -57,7 +57,7 @@ deep_learning_for_vision_systems/07/ssd_implementatoin_keras/examples/ssd7_traff
 deep_learning_for_vision_systems/07/ssd_implementatoin_keras/examples/ssd7_traffic_pred_02.png
 deep_learning_for_vision_systems/07/ssd_implementatoin_keras/examples/ssd7_traffic_pred_01.png
 deep_learning_for_vision_systems/06/dogs_vs_cats_project/transfer_network.png
-deep_learning_for_vision_systems/06/dogs_vs_cats_project/data/valid/dog/dog.12398.jpg
+deep_learning_for_vision_systems/
 deep_learning_for_vision_systems/06/dogs_vs_cats_project/data/valid/dog/dog.12397.jpg
 deep_learning_for_vision_systems/06/dogs_vs_cats_project/data/valid/dog/dog.12396.jpg
 deep_learning_for_vision_systems/06/dogs_vs_cats_project/data/valid/dog/dog.12395.jpg
@@ -1399,3 +1399,6 @@ evil.png
 output_image.png
 whatsapp(1).gif
 whatsapp.gif
+deep_learning_for_vision_systems/06/dogs_vs_cats_project/data/**
+deep_learning_for_vision_systems/06/dogs_vs_cats_project/data/test/cat/cat.12284.jpg
+*.png
