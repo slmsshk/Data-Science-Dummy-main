@@ -1,5 +1,5 @@
 Christmas/env/
-Neural Network/Image Models/env/
+Neural Network/Image Models/env/*
 Christmas/image.jpg
 Neural Network/Image Models/NST/env
 Time Series/env/
@@ -1406,3 +1406,10 @@ deep_learning_for_vision_systems/06/dogs_vs_cats_project/data/*
 deep_learning_for_vision_systems/06/dogs_vs_cats_project/data/test/cat/cat.12255.jpg
 *.jpg
 *.jpg
+Deployment/st/env/*
+Chatbot-Flask/env/*
+deep_learning_for_vision_systems/06/*
+deep_learning_for_vision_systems/06/dogs_vs_cats_project/data/test/cat/cat.12255.jpg
+deep_learning_for_vision_systems/06/dogs_vs_cats_project/data/test/cat/*
+Chatbot-Flask/__pycache__/main.cpython-311.pyc
+Chatbot-Flask/__pycache__/bot.cpython-311.pyc

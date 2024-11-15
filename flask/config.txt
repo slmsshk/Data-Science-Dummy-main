@@ -1,0 +1,5 @@
+https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html
+
+aws eks --region ap-south-1 update-kubeconfig --name slm
+
+docker build --platform linux/amd64  -t flask/app .
